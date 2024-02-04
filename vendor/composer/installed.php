@@ -3,13 +3,31 @@
         'name' => 'lilpkstud/seoulcapture',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'ec8dccd80e96f71a8bc5d58ab9b8627867b084e4',
+        'reference' => '14cd9b254c0fc52305f801fb5cd7908ac61a3446',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
         'dev' => true,
     ),
     'versions' => array(
+        'johnpbloch/wordpress' => array(
+            'pretty_version' => '6.4.3',
+            'version' => '6.4.3.0',
+            'reference' => 'b20c2071f4cd609953dbd7ffc97e5201094499f0',
+            'type' => 'package',
+            'install_path' => __DIR__ . '/../johnpbloch/wordpress',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'johnpbloch/wordpress-core' => array(
+            'pretty_version' => '6.4.3',
+            'version' => '6.4.3.0',
+            'reference' => '389a4e72f3e14a995f89fa4bc5a69c7cf75ae2a8',
+            'type' => 'wordpress-core',
+            'install_path' => __DIR__ . '/../../wordpress',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'johnpbloch/wordpress-core-installer' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -19,7 +37,7 @@
         'lilpkstud/seoulcapture' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'ec8dccd80e96f71a8bc5d58ab9b8627867b084e4',
+            'reference' => '14cd9b254c0fc52305f801fb5cd7908ac61a3446',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
