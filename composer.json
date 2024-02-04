@@ -7,6 +7,11 @@
         }
     ],
     "require": {
-        "johnbloch/wordpress": "~4"
+        "roots/wordpress": "^6.4"
+    },
+    "config": {
+        "allow-plugins": {
+            "roots/wordpress-core-installer": true
+        }
     }
 }
