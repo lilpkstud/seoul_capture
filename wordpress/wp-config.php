@@ -12,23 +12,21 @@
 //die();
 //$dotenv = Dotenv\Dotenv::createImmutable($test);
 //$dotenv->safeLoad();
-
-//var_dump($_ENV);
-
-$url = $_ENV('JAWSDB_URL');
+//$test = "hi";
+$url = getenv('JAWSDB_URL');
 $dbparts = parse_url($url);
 
-$hostname = $_ENV('HOST');
-$username = $_ENV('USERNAME');
-$password = $_ENV('PW');
-$database = $_ENG('DB');
+$hostname = $dbparts['host'];
+$username = $dbparts['user'];
+$password = $dbparts['pass'];
+$database = ltrim($dbparts['path'],'/');
 
 // Create connection
-$conn = new mysqli($hostname, $username, $password, $database);
+$conn = mysqli_connect($hostname, $username, $password, $database);
 
 // Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
 }
 echo "Connection was successfully established!";
 
