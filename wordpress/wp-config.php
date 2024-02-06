@@ -18,10 +18,10 @@
 $url = $_ENV('JAWSDB_URL');
 $dbparts = parse_url($url);
 
-$hostname = $dbparts['host'];
-$username = $dbparts['user'];
-$password = $dbparts['pass'];
-$database = ltrim($dbparts['path'],'/');
+$hostname = $_ENV('HOST');
+$username = $_ENV('USERNAME');
+$password = $_ENV('PW');
+$database = $_ENG('DB');
 
 // Create connection
 $conn = new mysqli($hostname, $username, $password, $database);
@@ -32,4 +32,3 @@ if ($conn->connect_error) {
 }
 echo "Connection was successfully established!";
 
-die();
