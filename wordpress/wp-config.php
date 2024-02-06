@@ -8,5 +8,5 @@ if(isset($_ENV[`JAWSDB_URL`])) {
     define("DB_CHARSET", ‘utf8’);
     define("DB_COLLATE", ‘’);
 } else {
-    die("No Database credentials!");
+    die("No Database credentials!" + $_ENV['JAWSDB_URL'] + $_ENV['Testing']);
 }
