@@ -3,7 +3,7 @@
         'name' => 'lilpkstud/seoulcapture',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '35e418a3ae344e6a93cf312c18a291813d0df19f',
+        'reference' => 'e78f98a56281040df7cdf1f2f553cb12e1bdb88b',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -37,7 +37,7 @@
         'lilpkstud/seoulcapture' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '35e418a3ae344e6a93cf312c18a291813d0df19f',
+            'reference' => 'e78f98a56281040df7cdf1f2f553cb12e1bdb88b',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
